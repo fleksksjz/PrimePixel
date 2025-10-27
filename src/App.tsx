@@ -41,7 +41,7 @@ function App() {
           <Navbar currentPage={currentPage} onNavigate={setCurrentPage} />
         )}
         <main>{renderPage()}</main>
-        {currentPage !== 'admin-panel' && <Footer />}
+        {currentPage !== 'admin-panel' && <Footer onNavigate={setCurrentPage} />}
         {currentPage !== 'admin-panel' && <WhatsAppButton />}
       </div>
     </AuthProvider>
